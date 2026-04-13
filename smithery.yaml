@@ -1,0 +1,10 @@
+name: pdf-tools-ai-mcp
+description: "MEOK AI Labs — PDF utility tools powered by MEOK AI Labs."
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/pdf-tools-ai-mcp
+license: MIT
+categories: [Document Processing, PDF]
+tags: [pdf-tools, pdf-conversion, pdf-editing, pdf-utilities]
+runtime: python
+entrypoint: server.py
