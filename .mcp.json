@@ -1,23 +1,73 @@
 {
   "name": "pdf-tools-ai-mcp",
-  "description": "MEOK AI Labs \u2014 PDF utility tools powered by MEOK AI Labs.",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/pdf-tools-ai-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "PDF text extraction, page counting, metadata reading, and merging.",
+  "version": "1.0.0",
   "tools": [
-    "extract_text",
-    "count_pages",
-    "get_metadata",
-    "merge_pages_data"
-  ],
-  "categories": [
-    "Document Processing",
-    "PDF"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "extract_text",
+      "description": "Extract text content from a PDF file.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "type": "string"
+          },
+          "max_pages": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "file_path"
+        ]
+      }
+    },
+    {
+      "name": "count_pages",
+      "description": "Count the number of pages in a PDF file.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_path"
+        ]
+      }
+    },
+    {
+      "name": "get_metadata",
+      "description": "Get metadata from a PDF file (title, author, creation date, etc).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "file_path": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "file_path"
+        ]
+      }
+    },
+    {
+      "name": "merge_pages_data",
+      "description": "Merge text data from multiple PDF page extractions into a single document.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "pages_data": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "pages_data"
+        ]
+      }
+    }
+  ]
 }

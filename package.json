@@ -1,7 +1,7 @@
 {
   "name": "pdf-tools-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs — pdf tools MCP Server",
+  "description": "MEOK AI Labs \u2014 pdf tools MCP Server",
   "main": "server.py",
   "mcp": {
     "name": "pdf tools",
@@ -9,10 +9,25 @@
     "homepage": "https://meok.ai",
     "repository": "https://github.com/CSOAI-ORG/pdf-tools-ai-mcp",
     "runtime": "python",
-    "tags": ["mcp", "mcp-server", "meok-ai-labs", "ai-tools"]
+    "tags": [
+      "mcp",
+      "mcp-server",
+      "meok-ai-labs",
+      "ai-tools"
+    ]
   },
-  "keywords": ["mcp", "mcp-server", "meok-ai-labs"],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "meok-ai-labs"
+  ],
   "author": "MEOK AI Labs <nicholas@meok.ai>",
   "license": "MIT",
-  "repository": {"type": "git", "url": "https://github.com/CSOAI-ORG/pdf-tools-ai-mcp"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CSOAI-ORG/pdf-tools-ai-mcp"
+  },
+  "dependencies": {
+    "PyPDF2": "^1.0.0"
+  }
 }

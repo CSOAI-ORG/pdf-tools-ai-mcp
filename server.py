@@ -3,6 +3,11 @@ PDF Tools AI MCP Server
 PDF utility tools powered by MEOK AI Labs.
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import re
 import time
 import struct
@@ -39,13 +44,17 @@ def _check_rate_limit(tool_name: str) -> None:
 
 
 @mcp.tool()
-def extract_text(file_path: str, max_pages: int = 50) -> dict:
+def extract_text(file_path: str, max_pages: int = 50, api_key: str = "") -> dict:
     """Extract text content from a PDF file.
 
     Args:
         file_path: Path to the PDF file
         max_pages: Maximum number of pages to extract (default 50)
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("extract_text")
     path_err = _validate_file_path(file_path)
     if path_err:
@@ -76,12 +85,16 @@ def extract_text(file_path: str, max_pages: int = 50) -> dict:
 
 
 @mcp.tool()
-def count_pages(file_path: str) -> dict:
+def count_pages(file_path: str, api_key: str = "") -> dict:
     """Count the number of pages in a PDF file.
 
     Args:
         file_path: Path to the PDF file
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("count_pages")
     path_err = _validate_file_path(file_path)
     if path_err:
@@ -104,12 +117,16 @@ def count_pages(file_path: str) -> dict:
 
 
 @mcp.tool()
-def get_metadata(file_path: str) -> dict:
+def get_metadata(file_path: str, api_key: str = "") -> dict:
     """Get metadata from a PDF file (title, author, creation date, etc).
 
     Args:
         file_path: Path to the PDF file
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("get_metadata")
     path_err = _validate_file_path(file_path)
     if path_err:
@@ -142,12 +159,16 @@ def get_metadata(file_path: str) -> dict:
 
 
 @mcp.tool()
-def merge_pages_data(pages_data: list[dict]) -> dict:
+def merge_pages_data(pages_data: list[dict], api_key: str = "") -> dict:
     """Merge text data from multiple PDF page extractions into a single document.
 
     Args:
         pages_data: List of dicts with keys: text, page_number (optional), source (optional)
     """
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     _check_rate_limit("merge_pages_data")
     if not pages_data:
         return {"error": "No pages data provided"}
