@@ -1,7 +1,7 @@
 {
   "name": "pdf-tools-ai-mcp",
   "version": "1.0.0",
-  "description": "MEOK AI Labs \u2014 pdf tools MCP Server",
+  "description": "AI-powered pdf tools ai MCP server for agents. Supports extract text, count pages, get metadata. By MEOK AI Labs.",
   "main": "server.py",
   "mcp": {
     "name": "pdf tools",
