@@ -1,0 +1,10 @@
+{
+  "name": "pdf-tools-ai-mcp",
+  "description": "MEOK AI Labs \u2014 pdf-tools-ai-mcp",
+  "vendor": "MEOK AI Labs",
+  "homepage": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/pdf-tools-ai-mcp",
+  "license": "MIT",
+  "runtime": "python",
+  "entryPoint": "mcp-wrapper.py"
+}
