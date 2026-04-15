@@ -1,5 +1,5 @@
 name: pdf-tools-ai-mcp
-description: PDF text extraction, page counting, metadata reading, and merging.
+description: MEOK AI Labs MCP Server
 version: 1.0.0
 tools:
 - name: extract_text

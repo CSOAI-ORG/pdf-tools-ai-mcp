@@ -1,6 +1,6 @@
 {
   "name": "pdf-tools-ai-mcp",
-  "description": "PDF text extraction, page counting, metadata reading, and merging.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
   "version": "1.0.0",
   "tools": [
     {
@@ -58,10 +58,7 @@
         "type": "object",
         "properties": {
           "pages_data": {
-            "type": "array",
-            "items": {
-              "type": "object"
-            }
+            "type": "array"
           }
         },
         "required": [
