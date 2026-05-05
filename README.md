@@ -1,63 +1,38 @@
-# Pdf Tools Ai
+<div align="center">
 
-> By [MEOK AI Labs](https://meok.ai) — MEOK AI Labs MCP Server
+[![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/pdf-tools-ai-mcp)](https://github.com/CSOAI-ORG/pdf-tools-ai-mcp/stargazers)
 
-PDF Tools AI MCP Server
+# updfU toolsU aiU mcp
+
+**PDF Tools AI MCP Server**
+
+[![npm version](https://img.shields.io/npm/v/@meok-ai/pdf-tools-ai-mcp)](https://www.npmjs.com/package/@meok-ai/pdf-tools-ai-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![MEOK AI Labs](https://img.shields.io/badge/MEOK_AI_Labs-255+_servers-purple)](https://meok.ai)
+
+[Installation](#installation) · [Docs](https://csoai.org) · [Report Bug](https://github.com/CSOAI-ORG/pdf-tools-ai-mcp/issues)
+
+</div>
+
+---
 
 ## Installation
 
 ```bash
 pip install pdf-tools-ai-mcp
+# or
+npm install -g @meok-ai/pdf-tools-ai-mcp
 ```
 
-## Usage
+## Quick Start
 
-```bash
-# Run standalone
-python server.py
+See the project repository for full documentation and examples.
 
-# Or via MCP
-mcp install pdf-tools-ai-mcp
-```
+## Enterprise Support
 
-## Tools
-
-### `extract_text`
-Extract text content from a PDF file.
-
-**Parameters:**
-- `file_path` (str)
-- `max_pages` (int)
-
-### `count_pages`
-Count the number of pages in a PDF file.
-
-**Parameters:**
-- `file_path` (str)
-
-### `get_metadata`
-Get metadata from a PDF file (title, author, creation date, etc).
-
-**Parameters:**
-- `file_path` (str)
-
-### `merge_pages_data`
-Merge text data from multiple PDF page extractions into a single document.
-
-**Parameters:**
-- `pages_data` (str)
-
-
-## Authentication
-
-Free tier: 15 calls/day. Upgrade at [meok.ai/pricing](https://meok.ai/pricing) for unlimited access.
-
-## Links
-
-- **Website**: [meok.ai](https://meok.ai)
-- **GitHub**: [CSOAI-ORG/pdf-tools-ai-mcp](https://github.com/CSOAI-ORG/pdf-tools-ai-mcp)
-- **PyPI**: [pypi.org/project/pdf-tools-ai-mcp](https://pypi.org/project/pdf-tools-ai-mcp/)
+- 📧 nicholas@csoai.org
+- 🌐 [CSOAI.org](https://csoai.org)
 
 ## License
 
-MIT — MEOK AI Labs
+MIT © [CSOAI](https://csoai.org)
