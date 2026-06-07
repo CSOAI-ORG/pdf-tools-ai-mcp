@@ -1,0 +1,22 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "pdf-tools-ai-mcp",
+    "description": "Pdf Tools Ai MCP Server by MEOK AI Labs",
+    "version": "1.0.6",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "pdf-tools-ai-mcp"
+      }
+    ],
+    "capabilities": [
+      "extract_text",
+      "count_pages",
+      "get_metadata",
+      "merge_pages_data"
+    ]
+  }
+}

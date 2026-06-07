@@ -1,0 +1,59 @@
+{
+  "name": "pdf-tools-ai-mcp",
+  "description": "Pdf Tools Ai MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/pdf-tools-ai-mcp.html",
+  "version": "1.0.6",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "extract_text",
+      "name": "Extract Text",
+      "description": "extract_text via pdf-tools-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "count_pages",
+      "name": "Count Pages",
+      "description": "count_pages via pdf-tools-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_metadata",
+      "name": "Get Metadata",
+      "description": "get_metadata via pdf-tools-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "merge_pages_data",
+      "name": "Merge Pages Data",
+      "description": "merge_pages_data via pdf-tools-ai-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
