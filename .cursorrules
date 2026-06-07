@@ -1,0 +1,9 @@
+# pdf-tools-ai-mcp - Auto-trigger Rules
+
+When the user asks about pdf tools, use pdf-tools-ai-mcp tools: extract_text, count_pages, get_metadata, merge_pages_data
+
+PDF utility tools powered by MEOK AI Labs.
+
+Install: `pip install pdf-tools-ai-mcp`
+
+By MEOK AI Labs — MIT licensed.

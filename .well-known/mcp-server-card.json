@@ -1,0 +1,25 @@
+{
+  "name": "pdf-tools-ai-mcp",
+  "title": "Pdf Tools Ai Mcp",
+  "description": "AI-powered pdf tools ai MCP server for agents. Supports extract text, count pages, get metadata. By MEOK AI Labs.",
+  "version": "1.0.6",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "extract_text"
+    },
+    {
+      "name": "count_pages"
+    },
+    {
+      "name": "get_metadata"
+    },
+    {
+      "name": "merge_pages_data"
+    }
+  ]
+}
