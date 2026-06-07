@@ -1,0 +1,31 @@
+# Pdf Tools Ai MCP
+
+> MEOK AI Labs MCP Server
+
+`pdf-tools-ai-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install pdf-tools-ai-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx pdf-tools-ai-mcp
+```
+
+## Tools
+
+- `extract_text` — Extract text content from a PDF file.
+- `count_pages` — Count the number of pages in a PDF file.
+- `get_metadata` — Get metadata from a PDF file (title, author, creation date, etc).
+- `merge_pages_data` — Merge text data from multiple PDF page extractions into a single document.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/pdf-tools-ai-mcp
+- PyPI: https://pypi.org/project/pdf-tools-ai-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
