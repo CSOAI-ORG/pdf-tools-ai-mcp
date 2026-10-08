@@ -9,7 +9,7 @@ description = "AI-powered pdf tools ai MCP server for agents. Supports extract t
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]
-dependencies = ["mcp>=1.0.0", "PyPDF2>=3.0.0", ]
+dependencies = ["mcp>=2.0.0", "PyPDF2>=3.0.0", ]
 keywords = ["mcp", "ai", "meok", "pdf", "tools", "mcp/"]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -22,7 +22,7 @@ Homepage = "https://meok.ai"
 Repository = "https://github.com/CSOAI-ORG/pdf-tools-ai-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
-only-include = ["server.py", "auth_middleware.py"]
+only-include = ["server.py", "auth_middleware.py", "mcp2026_shim.py"]
 
 [project.scripts]
 pdf_tools_ai_mcp = "server:main"
